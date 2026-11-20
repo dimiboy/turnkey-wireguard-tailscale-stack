@@ -32,7 +32,7 @@ services:
     container_name: tailscale-subnet-router
     hostname: homelab-gateway
     environment:
-      - TS_AUTHKEY=${TS_AUTHKEY:-tskey-auth-placeholder}
+      - TS_AUTHKEY=${TS_AUTHKEY:-your_tailscale_auth_key_here}
       - TS_ROUTES=${TS_LAN_SUBNET:-192.168.1.0/24}
       - TS_EXTRA_ARGS=--advertise-exit-node
       - TS_STATE_DIR=/var/lib/tailscale

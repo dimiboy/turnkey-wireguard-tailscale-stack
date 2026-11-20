@@ -29,7 +29,7 @@ docker compose up -d
 ---
 
 ## Step 4: Tailscale Subnet Routing (Zero Port-Forwarding)
-1. Add your Tailscale Auth Key to `.env` (`TS_AUTHKEY=tskey-auth-...`).
+1. Add your Tailscale Auth Key to `.env` (`TS_AUTHKEY=your_tailscale_auth_key_here`).
 2. Run `docker compose restart tailscale`.
 3. In your Tailscale Admin Console (`login.tailscale.com/admin/machines`):
    - Find `homelab-gateway`.
