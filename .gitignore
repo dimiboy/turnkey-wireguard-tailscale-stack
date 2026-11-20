@@ -1,0 +1,6 @@
+﻿*.py
+!watchdog/monitor.py
+*.png
+!cover.png
+.env
+__pycache__/
